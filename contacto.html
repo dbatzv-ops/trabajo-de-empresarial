@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NutriVital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="contacto_header">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/log.png" alt="">
+            <span>NutriVital</span>
+        </div>
+
+        <ul class="nav_items">
+            <div class="item">
+                <li><a href="index.html">INICIO</a></li>
+                   <li><a href="index.html">INICIO</a></li>
+                    <li><a href="catalogo.html">CATALOGO</a></li>
+                    <li><a href="Plan.html">PLANES</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="login.html">SESION</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <section class="contacto_section">
+
+        <h2 class="heading_1">Contáctanos</h2>
+        <h1 class="heading">Queremos saber de ti</h1>
+
+        <div class="contacto_container">
+
+            <!-- FORMULARIO CONTACTO -->
+            <form class="contacto_form" id="formContacto">
+
+                <h3>Enviar mensaje</h3>
+
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button class="btn">Enviar</button>
+
+            </form>
+
+            <!-- FORMULARIO OPINION -->
+            <form class="contacto_form" id="formOpinion">
+
+                <h3>Deja tu opinión</h3>
+
+                <input type="text" placeholder="Nombre" required>
+
+                <select required>
+                    <option value="">Calificación</option>
+                    <option>⭐</option>
+                    <option>⭐⭐</option>
+                    <option>⭐⭐⭐</option>
+                    <option>⭐⭐⭐⭐</option>
+                    <option>⭐⭐⭐⭐⭐</option>
+                </select>
+
+                <textarea placeholder="¿Qué opinas del producto?" required></textarea>
+
+                <button class="btn">Enviar opinión</button>
+
+            </form>
+
+        </div>
+
+        <!-- MENSAJE -->
+        <p id="mensajeExito" style="display:none; margin-top:20px; color:lightgreen;">
+            ✅ ¡Gracias por tu mensaje!
+        </p>
+
+    </section>
+
+</header>
+
+<script src="contacto.js"></script>
+</body>
+</html>
