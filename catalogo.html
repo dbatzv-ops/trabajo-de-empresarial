@@ -5,91 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - NutriVital</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header class="catalogo_header">
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/log.png" alt="">
-            <span>NutriVital</span>
-        </div>
+    <nav class="help_navbar">
+        <a class="help_logo nav_logo_link" href="index.html">
+            <img src="img/log.png" alt="Logo NutriVital">
+            <h2>Nutri<span>Vital</span></h2>
+        </a>
 
-        <ul class="nav_items">
-            <div class="item">
-                  <li><a href="index.html">INICIO</a></li>
-                    <li><a href="catalogo.html">CATALOGO</a></li>
-                    <li><a href="Plan.html">PLANES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="login.html">SESION</a></li>
-
-            </div>
+        <ul class="help_menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="reviews.html">Opiniones</a></li>
+            <li><a href="contacto.html">Centro de Ayuda</a></li>
         </ul>
+
+        <div class="help_actions">
+            <a class="login_btn" href="login.html">Iniciar Sesión</a>
+            <a class="premium_btn" href="Plan.html">
+                <i class="fa-solid fa-crown"></i>
+                Premium
+            </a>
+        </div>
     </nav>
 
     <!-- TITULO -->
     <section class="catalogo_section">
-        <h2 class="heading_1">Aceite de Aguacate</h2>
-        <h1 class="heading">Productos de Chimaltenango</h1>
+        <div class="catalogo_intro">
+            <span>Catálogo NutriVital</span>
+            <h1>Aceite de aguacate natural de Chimaltenango</h1>
+            <p>Elige la presentación ideal para tu cocina, tu familia o tu negocio. Todos nuestros productos están pensados para cocinar saludable sin perder sabor.</p>
+        </div>
 
+        <div class="catalogo_shell">
+            <aside class="catalogo_sidebar">
+                <h3>Comprar por presentación</h3>
 
+                <button class="catalogo_filter active" data-categoria="todos">
+                    <i class="fa-solid fa-border-all"></i>
+                    Todos
+                </button>
 
-        <!-- PRODUCTOS -->
-        <div class="catalogo_container">
+                <button class="catalogo_filter" data-categoria="botellas">
+                    <i class="fa-solid fa-bottle-droplet"></i>
+                    Botellas
+                </button>
 
-            <!-- PRODUCTO -->
-            <div class="producto" data-base="50">
-                <img src="img/a1.png">
-                <h3>Aceite Extra Virgen</h3>
-                <p>100% natural de Chimaltenango</p>
+                <button class="catalogo_filter" data-categoria="formato-grande">
+                    <i class="fa-solid fa-jug-detergent"></i>
+                    Formato grande
+                </button>
 
-                <ul class="beneficios">
-                    <li>✔ Rico en antioxidantes</li>
-                    <li>✔ Bueno para el corazón</li>
-                    <li>✔ Ideal para cocinar</li>
-                </ul>
+                <button class="catalogo_filter" data-categoria="mayoreo">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    Mayoreo
+                </button>
 
-                <h2 class="precio">Q50</h2>
-                <button class="btn">Comprar</button>
+                <div class="catalogo_tip">
+                    <i class="fa-solid fa-leaf"></i>
+                    <p>Todos los productos son elaborados con aguacates seleccionados.</p>
+                </div>
+            </aside>
+
+            <div class="catalogo_content">
+                <div class="catalogo_toolbar">
+                    <div>
+                        <h2 id="catalogoTitulo">Todos los productos</h2>
+                        <p id="catalogoContador">Productos disponibles</p>
+                    </div>
+
+                    <a href="pago.html" class="catalogo_checkout">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Ir a pago
+                    </a>
+                </div>
+
+                <!-- PRODUCTOS -->
+                <div class="catalogo_container" id="catalogoProductos"></div>
             </div>
-
-            <div class="producto" data-base="70">
-                <img src="img/a2.png">
-                <h3>Aceite Premium Orgánico</h3>
-                <p>Producción artesanal</p>
-
-                <ul class="beneficios">
-                    <li>✔ 100% orgánico</li>
-                    <li>✔ Sin químicos</li>
-                    <li>✔ Alta calidad exportación</li>
-                </ul>
-
-                <h2 class="precio">Q70</h2>
-                <button class="btn">Comprar</button>
-            </div>
-
-            <div class="producto" data-base="90">
-                <img src="img/a3.png">
-                <h3>Aceite Gourmet</h3>
-                <p>Para cocina profesional</p>
-
-                <ul class="beneficios">
-                    <li>✔ Sabor intenso</li>
-                    <li>✔ Ideal para chefs</li>
-                    <li>✔ Presentación elegante</li>
-                </ul>
-
-                <h2 class="precio">Q90</h2>
-                <button class="btn">Comprar</button>
-            </div>
-
         </div>
     </section>
 
 </header>
-
 <script src="catalogo.js"></script>
 </body>
 </html>

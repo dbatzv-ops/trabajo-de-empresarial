@@ -5,35 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video - NutriVital</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header class="video_header">
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/log.png" alt="">
-            <span>NutriVital</span>
-        </div>
+<nav class="help_navbar">
 
-        <ul class="nav_items">
-            <div class="item">
-                   <li><a href="index.html">INICIO</a></li>
-                    <li><a href="catalogo.html">CATALOGO</a></li>
-                    <li><a href="Plan.html">PLANES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="login.html">SESION</a></li>
+    <a class="help_logo nav_logo_link" href="index.html">
 
-            </div>
-        </ul>
-    </nav>
+        <img src="img/log.png" alt="Logo NutriVital">
+
+        <h2>Nutri<span>Vital</span></h2>
+
+    </a>
+
+    <ul class="help_menu">
+
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="reviews.html">Opiniones</a></li>
+        <li><a href="contacto.html">Centro de Ayuda</a></li>
+
+    </ul>
+
+    <div class="help_actions">
+
+        <a class="login_btn" href="login.html">
+            Iniciar Sesión
+        </a>
+
+        <a class="premium_btn" href="Plan.html">
+
+            <i class="fa-solid fa-crown"></i>
+
+            Premium
+
+        </a>
+
+    </div>
+
+</nav>
 
     <!-- CONTENIDO -->
     <section class="video_section">
 
-        <h2 class="heading_1">Descubre NutriVital</h2>
-        <h1 class="heading">Conoce nuestro producto en acción</h1>
+        <div class="video_intro">
+            <span>NutriVital en tu cocina</span>
+            <h1>Descubre cómo nuestro aceite de aguacate transforma tus recetas</h1>
+            <p>Conoce el origen, la calidad y los usos de nuestro aceite natural elaborado en Chimaltenango.</p>
+        </div>
 
         <div class="video_container">
 
@@ -45,8 +69,14 @@
         </div>
 
         <div class="video_actions">
-            <button class="btn">Comprar ahora</button>
-            <button class="btn btn2"><a href="Plan.html">Ver planes</a></button>
+            <a class="video_btn primary" href="catalogo.html">
+                <i class="fa-solid fa-basket-shopping"></i>
+                Comprar ahora
+            </a>
+            <a class="video_btn secondary" href="Plan.html">
+                <i class="fa-solid fa-crown"></i>
+                Ver planes
+            </a>
         </div>
 
     </section>

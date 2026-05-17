@@ -5,72 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planes - NutriVital</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header class="planes_header">
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/log.png" alt="">
-            <span>NutriVital</span>
-        </div>
+    <nav class="help_navbar">
+        <a class="help_logo nav_logo_link" href="index.html">
+            <img src="img/log.png" alt="Logo NutriVital">
+            <h2>Nutri<span>Vital</span></h2>
+        </a>
 
-        <ul class="nav_items" id="nav_links">
-            <div class="item">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="catalogo.html">CATALOGO</a></li>
-                    <li><a href="Plan.html">PLANES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="login.html">SESION</a></li>
-
-            </div>
+        <ul class="help_menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="reviews.html">Opiniones</a></li>
+            <li><a href="contacto.html">Centro de Ayuda</a></li>
         </ul>
+
+        <div class="help_actions">
+            <a class="login_btn" href="login.html">Iniciar Sesión</a>
+            <a class="premium_btn" href="Plan.html">
+                <i class="fa-solid fa-crown"></i>
+                Premium
+            </a>
+        </div>
     </nav>
 
     <section class="planes_section">
 
-        <h2 class="heading_1">Nuestros Planes</h2>
-        <h1 class="heading">Elige el mejor para ti</h1>
+        <div class="planes_hero">
+            <h1>Todas las recetas. Todos los beneficios. Elige tu paquete.</h1>
+            <p>Suscríbete a NutriVital y recibe productos naturales, descuentos y beneficios exclusivos para cocinar mejor cada día.</p>
+        </div>
 
         <div class="planes_container">
 
             <!-- PLAN GRATIS -->
             <div class="plan_card">
+                <div class="plan_brand">
+                    <span>NutriVital</span>
+                    <strong>Basic</strong>
+                </div>
                 <h3>Gratis</h3>
-                <h2>$0</h2>
+                <h2>$0<span>/mes</span></h2>
+                <p>Explora nuestros productos y conoce los beneficios del aceite de aguacate.</p>
                 <ul>
                     <li>Acceso básico</li>
                     <li>Ver productos</li>
                     <li>Sin compras online</li>
                 </ul>
-                <button class="btn">Seleccionar</button>
+                <a class="plan_btn" href="pago.html?producto=Plan%20Basic&precio=0&imagen=img/log.png">Seleccionar</a>
             </div>
 
             <!-- PLAN PRO -->
             <div class="plan_card popular">
+                <div class="popular_badge">Popular</div>
+                <div class="plan_brand">
+                    <span>NutriVital</span>
+                    <strong>Premium</strong>
+                </div>
                 <h3>Premium</h3>
-                <h2>$9.99</h2>
+                <h2>$9.99<span>/mes</span></h2>
+                <p>Compra en línea, recibe descuentos exclusivos y accede a entrega rápida.</p>
                 <ul>
                     <li>Compras online</li>
                     <li>Descuentos exclusivos</li>
                     <li>Entrega rápida</li>
                 </ul>
-                <button class="btn">Comprar</button>
+                <a class="plan_btn" href="pago.html?producto=Plan%20Premium&precio=9.99&imagen=img/log.png">Seleccionar</a>
             </div>
 
             <!-- PLAN EMPRESA -->
             <div class="plan_card">
+                <div class="plan_brand">
+                    <span>NutriVital</span>
+                    <strong>Empresa</strong>
+                </div>
                 <h3>Empresarial</h3>
-                <h2>$29.99</h2>
+                <h2>$29.99<span>/mes</span></h2>
+                <p>Ideal para restaurantes, negocios saludables y pedidos grandes.</p>
                 <ul>
                     <li>Pedidos masivos</li>
                     <li>Soporte prioritario</li>
                     <li>Ofertas especiales</li>
                 </ul>
-                <button class="btn">Elegir</button>
+                <a class="plan_btn" href="pago.html?producto=Plan%20Empresarial&precio=29.99&imagen=img/log.png">Seleccionar</a>
             </div>
 
+        </div>
+
+        <p class="planes_note">Planes mensuales con beneficios sujetos a disponibilidad. Puedes cambiar o cancelar tu plan cuando lo necesites.</p>
+
+        <div class="plans_compare">
+            <h2>¿Qué plan vas a elegir?</h2>
+            <p>Compara los beneficios incluidos en cada paquete.</p>
+
+            <div class="compare_table">
+                <div class="compare_row compare_head">
+                    <span>Beneficio</span>
+                    <span>Basic</span>
+                    <span>Premium</span>
+                    <span>Empresa</span>
+                </div>
+
+                <div class="compare_row">
+                    <span>Ver catálogo completo</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                </div>
+
+                <div class="compare_row">
+                    <span>Compras online</span>
+                    <span>—</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                </div>
+
+                <div class="compare_row">
+                    <span>Descuentos exclusivos</span>
+                    <span>—</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                </div>
+
+                <div class="compare_row">
+                    <span>Soporte prioritario</span>
+                    <span>—</span>
+                    <span>—</span>
+                    <span>✓</span>
+                </div>
+            </div>
         </div>
 
     </section>

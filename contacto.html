@@ -2,87 +2,257 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - NutriVital</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Centro de Ayuda - NutriVital</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-<header class="contacto_header">
+<!-- HEADER -->
+<header class="help_header">
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/log.png" alt="">
-            <span>NutriVital</span>
+    <nav class="help_navbar">
+
+        <a class="help_logo nav_logo_link" href="index.html">
+
+            <img src="img/log.png" alt="Logo NutriVital">
+
+            <h2>Nutri<span>Vital</span></h2>
+
+        </a>
+
+        <ul class="help_menu">
+
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="reviews.html">Opiniones</a></li>
+            <li><a href="contacto.html">Centro de Ayuda</a></li>
+
+        </ul>
+
+        <div class="help_actions">
+
+            <a class="login_btn" href="login.html">
+                Iniciar sesión
+            </a>
+
+            <a class="premium_btn" href="Plan.html">
+                <i class="fa-solid fa-crown"></i>
+                Premium
+            </a>
+
         </div>
 
-        <ul class="nav_items">
-            <div class="item">
-                <li><a href="index.html">INICIO</a></li>
-                   <li><a href="index.html">INICIO</a></li>
-                    <li><a href="catalogo.html">CATALOGO</a></li>
-                    <li><a href="Plan.html">PLANES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="login.html">SESION</a></li>
-            </div>
-        </ul>
     </nav>
 
-    <!-- CONTENIDO -->
-    <section class="contacto_section">
+    <!-- HERO -->
+    <section class="help_hero">
 
-        <h2 class="heading_1">Contáctanos</h2>
-        <h1 class="heading">Queremos saber de ti</h1>
+        <h1>
+            ¿Cómo podemos ayudarte?
+        </h1>
 
-        <div class="contacto_container">
+        <p>
+            Encuentra respuestas rápidas sobre
+            NutriVital y nuestros productos.
+        </p>
 
-            <!-- FORMULARIO CONTACTO -->
-            <form class="contacto_form" id="formContacto">
+        <!-- SEARCH -->
+        <div class="help_search">
 
-                <h3>Enviar mensaje</h3>
+            <i class="fa-solid fa-magnifying-glass"></i>
 
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            <input
+            type="text"
+            placeholder="Describe tu problema...">
 
-                <button class="btn">Enviar</button>
-
-            </form>
-
-            <!-- FORMULARIO OPINION -->
-            <form class="contacto_form" id="formOpinion">
-
-                <h3>Deja tu opinión</h3>
-
-                <input type="text" placeholder="Nombre" required>
-
-                <select required>
-                    <option value="">Calificación</option>
-                    <option>⭐</option>
-                    <option>⭐⭐</option>
-                    <option>⭐⭐⭐</option>
-                    <option>⭐⭐⭐⭐</option>
-                    <option>⭐⭐⭐⭐⭐</option>
-                </select>
-
-                <textarea placeholder="¿Qué opinas del producto?" required></textarea>
-
-                <button class="btn">Enviar opinión</button>
-
-            </form>
+            <button>
+                Buscar
+            </button>
 
         </div>
-
-        <!-- MENSAJE -->
-        <p id="mensajeExito" style="display:none; margin-top:20px; color:lightgreen;">
-            ✅ ¡Gracias por tu mensaje!
-        </p>
 
     </section>
 
 </header>
 
+<!-- CONTENT -->
+<section class="topics_section">
+
+    <div class="section_title">
+
+        <h2>Temas más consultados</h2>
+        <p>Encuentra ayuda rápida sobre compras, entregas, productos y beneficios NutriVital.</p>
+
+    </div>
+
+    <div class="topics_grid">
+
+        <!-- CARD -->
+        <div class="topic_card">
+
+            <div class="topic_icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <h3>Cuenta y acceso</h3>
+
+            <p>
+                Recupera tu acceso, crea tu cuenta o revisa tus datos de compra.
+            </p>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="topic_card">
+
+            <div class="topic_icon">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+
+            <h3>Envíos y entregas</h3>
+
+            <p>
+                Consulta tiempos de entrega y seguimiento de pedidos en Guatemala.
+            </p>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="topic_card">
+
+            <div class="topic_icon">
+                <i class="fa-solid fa-box"></i>
+            </div>
+
+            <h3>Nuestros productos</h3>
+
+            <p>
+                Conoce presentaciones, usos y beneficios del aceite de aguacate.
+            </p>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="topic_card">
+
+            <div class="topic_icon">
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+
+            <h3>Pagos y facturación</h3>
+
+            <p>
+                Resuelve dudas sobre tarjetas, PayPal, planes y confirmaciones.
+            </p>
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="faq_section">
+
+    <div class="faq_left">
+
+        <h2>Preguntas frecuentes</h2>
+        <p class="faq_intro">Respuestas claras para comprar con confianza y aprovechar mejor tu aceite NutriVital.</p>
+
+        <div class="faq_item">
+
+            <button class="faq_question">
+                ¿Qué beneficios tiene el aceite?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="faq_answer">
+                El aceite de aguacate es rico en grasas saludables y antioxidantes. Es ideal para cocinar, aderezar ensaladas y apoyar una alimentación más equilibrada.
+            </div>
+
+        </div>
+
+        <div class="faq_item">
+
+            <button class="faq_question">
+                ¿Realizan envíos?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="faq_answer">
+                Sí, realizamos envíos dentro de Guatemala. El tiempo puede variar según tu ubicación y la disponibilidad del producto.
+            </div>
+
+        </div>
+
+        <div class="faq_item">
+
+            <button class="faq_question">
+                ¿Qué incluye Premium?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="faq_answer">
+                Premium incluye descuentos exclusivos, acceso a beneficios especiales, compras online y promociones para clientes frecuentes.
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SUPPORT BOX -->
+    <div class="support_box">
+
+        <h3>
+            ¿Necesitas ayuda personalizada?
+        </h3>
+
+        <p>
+            Escríbenos y te apoyamos con pedidos, pagos, entregas o información de nuestros aceites.
+        </p>
+
+        <button class="support_btn">
+
+            <i class="fa-solid fa-comment"></i>
+
+            Contactar soporte
+
+        </button>
+
+        <span>
+            Respondemos en menos de 24 horas.
+        </span>
+
+    </div>
+
+</section>
+
 <script src="contacto.js"></script>
+
 </body>
 </html>

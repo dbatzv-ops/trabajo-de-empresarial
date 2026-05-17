@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pago - NutriVital</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="pago_header">
+
+<nav class="help_navbar">
+    <a class="help_logo nav_logo_link" href="index.html">
+        <img src="img/log.png" alt="Logo NutriVital">
+        <h2>Nutri<span>Vital</span></h2>
+    </a>
+
+    <ul class="help_menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="reviews.html">Opiniones</a></li>
+        <li><a href="contacto.html">Centro de Ayuda</a></li>
+    </ul>
+
+    <div class="help_actions">
+        <a class="login_btn" href="login.html">Iniciar Sesión</a>
+        <a class="premium_btn" href="Plan.html">
+            <i class="fa-solid fa-crown"></i>
+            Premium
+        </a>
+    </div>
+</nav>
+
+<section class="pago_section">
+
+    <div class="pago_container">
+
+        <!-- RESUMEN -->
+        <aside class="resumen_pago">
+
+            <div class="checkout_brand">
+                <img src="img/log.png" alt="Logo NutriVital">
+                <h2>Pagar</h2>
+            </div>
+
+            <div class="checkout_product">
+                <img id="productoImagen" class="imagen_pago" alt="Producto seleccionado">
+
+                <div>
+                    <h3 id="productoNombre"></h3>
+                    <div class="checkout_price_line">
+                        <span class="discount_badge">NutriVital</span>
+                        <strong id="productoPrecio"></strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout_totals">
+                <div>
+                    <span>Subtotal</span>
+                    <strong id="subtotalPrecio"></strong>
+                </div>
+
+                <div>
+                    <span>Total</span>
+                    <strong id="totalPrecio"></strong>
+                </div>
+            </div>
+
+            <p class="reward_badge">
+                <i class="fa-solid fa-sparkles"></i>
+                Obtén beneficios NutriVital con esta compra.
+            </p>
+
+        </aside>
+
+        <!-- METODOS -->
+        <main class="metodos_pago">
+
+            <div class="checkout_user">
+                <span>D</span>
+                <p>David_b6</p>
+            </div>
+
+            <h1>Detalles del pago</h1>
+
+            <form id="formPago">
+
+                <div class="payment_group">
+                    <div class="payment_row account_row">
+                        <div class="payment_left">
+                            <i class="fa-solid fa-wallet"></i>
+                            <strong>Saldo de la cuenta</strong>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="payment_row reward_row">
+                        <div class="payment_left">
+                            <i class="fa-solid fa-star"></i>
+                            <div>
+                                <strong>Recompensas NutriVital</strong>
+                                <small>Q5.00 disponible</small>
+                            </div>
+                        </div>
+                        <span class="toggle_switch"></span>
+                    </div>
+                </div>
+
+                <div class="payment_group">
+                    <label class="metodo active">
+                        <div class="payment_left">
+                            <img src="img/visa.png" alt="Tarjeta">
+                            <span>Credit Card / Debit Card</span>
+                        </div>
+                        <input type="radio" name="metodoPago" checked>
+                    </label>
+
+                    <div class="card_fields show">
+                        <input type="text" placeholder="Nombre en la tarjeta" required>
+                        <input type="text" placeholder="Número de tarjeta" inputmode="numeric" maxlength="19" required>
+
+                        <div class="card_fields_row">
+                            <input type="text" placeholder="Vence MM/AA" maxlength="5" required>
+                            <input type="text" placeholder="CCV" inputmode="numeric" maxlength="4" required>
+                        </div>
+                    </div>
+
+                    <label class="metodo">
+                        <div class="payment_left">
+                            <img src="img/paypal.png" alt="PayPal">
+                            <span>PayPal</span>
+                        </div>
+                        <input type="radio" name="metodoPago">
+                    </label>
+                </div>
+
+                <button class="checkout_pay_btn" type="submit">
+                    Pagar ahora
+                </button>
+
+                <p class="checkout_terms">
+                    Al seleccionar "Pagar ahora", confirmas que tienes autorización para usar este método de pago y aceptas los términos de compra de NutriVital.
+                </p>
+
+            </form>
+
+        </main>
+
+    </div>
+
+</section>
+
+</header>
+
+<script src="pago.js"></script>
+
+</body>
+</html>
