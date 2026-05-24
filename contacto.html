@@ -1,258 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro de Ayuda - NutriVital</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="help_header">
 
-    <!-- NAVBAR -->
     <nav class="help_navbar">
+        <button class="mobile_menu_btn" type="button" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
         <a class="help_logo nav_logo_link" href="index.html">
-
             <img src="img/log.png" alt="Logo NutriVital">
-
             <h2>Nutri<span>Vital</span></h2>
-
         </a>
 
         <ul class="help_menu">
-
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="reviews.html">Opiniones</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
             <li><a href="contacto.html">Centro de Ayuda</a></li>
-
+            <li><a href="contact.html">Contacto</a></li>
         </ul>
 
         <div class="help_actions">
-
-            <a class="login_btn" href="login.html">
-                Iniciar sesión
-            </a>
-
+            <a class="login_btn" href="login.html">Iniciar sesión</a>
             <a class="premium_btn" href="Plan.html">
                 <i class="fa-solid fa-crown"></i>
                 Premium
             </a>
-
         </div>
-
     </nav>
 
-    <!-- HERO -->
     <section class="help_hero">
+        <h1>¿Cómo podemos ayudarte?</h1>
+        <p>Encuentra respuestas rápidas sobre NutriVital y nuestros productos.</p>
 
-        <h1>
-            ¿Cómo podemos ayudarte?
-        </h1>
-
-        <p>
-            Encuentra respuestas rápidas sobre
-            NutriVital y nuestros productos.
-        </p>
-
-        <!-- SEARCH -->
         <div class="help_search">
-
             <i class="fa-solid fa-magnifying-glass"></i>
-
-            <input
-            type="text"
-            placeholder="Describe tu problema...">
-
-            <button>
-                Buscar
-            </button>
-
+            <input type="text" placeholder="Describe tu problema...">
+            <button>Buscar</button>
         </div>
-
     </section>
 
 </header>
 
-<!-- CONTENT -->
 <section class="topics_section">
-
     <div class="section_title">
-
         <h2>Temas más consultados</h2>
         <p>Encuentra ayuda rápida sobre compras, entregas, productos y beneficios NutriVital.</p>
-
     </div>
 
     <div class="topics_grid">
-
-        <!-- CARD -->
         <div class="topic_card">
-
             <div class="topic_icon">
                 <i class="fa-solid fa-lock"></i>
             </div>
-
             <h3>Cuenta y acceso</h3>
-
-            <p>
-                Recupera tu acceso, crea tu cuenta o revisa tus datos de compra.
-            </p>
-
-            <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+            <p>Recupera tu acceso, crea tu cuenta o revisa tus datos de compra.</p>
+            <a href="login.html"><i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <!-- CARD -->
         <div class="topic_card">
-
             <div class="topic_icon">
                 <i class="fa-solid fa-truck"></i>
             </div>
-
             <h3>Envíos y entregas</h3>
-
-            <p>
-                Consulta tiempos de entrega y seguimiento de pedidos en Guatemala.
-            </p>
-
-            <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+            <p>Consulta tiempos de entrega y seguimiento de pedidos en Guatemala.</p>
+            <a href="contact.html"><i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <!-- CARD -->
         <div class="topic_card">
-
             <div class="topic_icon">
                 <i class="fa-solid fa-box"></i>
             </div>
-
             <h3>Nuestros productos</h3>
-
-            <p>
-                Conoce presentaciones, usos y beneficios del aceite de aguacate.
-            </p>
-
-            <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+            <p>Conoce presentaciones, usos y beneficios del aceite de aguacate.</p>
+            <a href="catalogo.html"><i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
-        <!-- CARD -->
         <div class="topic_card">
-
             <div class="topic_icon">
                 <i class="fa-solid fa-credit-card"></i>
             </div>
-
             <h3>Pagos y facturación</h3>
-
-            <p>
-                Resuelve dudas sobre tarjetas, PayPal, planes y confirmaciones.
-            </p>
-
-            <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+            <p>Resuelve dudas sobre tarjetas, PayPal, planes y confirmaciones.</p>
+            <a href="pago.html"><i class="fa-solid fa-arrow-right"></i></a>
         </div>
-
     </div>
-
 </section>
 
-<!-- FAQ -->
 <section class="faq_section">
-
     <div class="faq_left">
-
         <h2>Preguntas frecuentes</h2>
         <p class="faq_intro">Respuestas claras para comprar con confianza y aprovechar mejor tu aceite NutriVital.</p>
 
         <div class="faq_item">
-
             <button class="faq_question">
                 ¿Qué beneficios tiene el aceite?
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
-
             <div class="faq_answer">
                 El aceite de aguacate es rico en grasas saludables y antioxidantes. Es ideal para cocinar, aderezar ensaladas y apoyar una alimentación más equilibrada.
             </div>
-
         </div>
 
         <div class="faq_item">
-
             <button class="faq_question">
                 ¿Realizan envíos?
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
-
             <div class="faq_answer">
                 Sí, realizamos envíos dentro de Guatemala. El tiempo puede variar según tu ubicación y la disponibilidad del producto.
             </div>
-
         </div>
 
         <div class="faq_item">
-
             <button class="faq_question">
                 ¿Qué incluye Premium?
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
-
             <div class="faq_answer">
                 Premium incluye descuentos exclusivos, acceso a beneficios especiales, compras online y promociones para clientes frecuentes.
             </div>
-
         </div>
-
     </div>
 
-    <!-- SUPPORT BOX -->
     <div class="support_box">
+        <h3>¿Necesitas ayuda personalizada?</h3>
+        <p>Escríbenos y te apoyamos con pedidos, pagos, entregas o información de nuestros aceites.</p>
 
-        <h3>
-            ¿Necesitas ayuda personalizada?
-        </h3>
-
-        <p>
-            Escríbenos y te apoyamos con pedidos, pagos, entregas o información de nuestros aceites.
-        </p>
-
-        <button class="support_btn">
-
+        <a class="support_btn" href="contact.html">
             <i class="fa-solid fa-comment"></i>
-
             Contactar soporte
+        </a>
 
-        </button>
-
-        <span>
-            Respondemos en menos de 24 horas.
-        </span>
-
+        <span>Respondemos en menos de 24 horas.</span>
     </div>
-
 </section>
 
+<script src="nav.js"></script>
 <script src="contacto.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NutriVital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="contact_page_header">
+
+    <nav class="help_navbar">
+        <button class="mobile_menu_btn" type="button" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a class="help_logo nav_logo_link" href="index.html">
+            <img src="img/log.png" alt="Logo NutriVital">
+            <h2>Nutri<span>Vital</span></h2>
+        </a>
+
+        <ul class="help_menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contacto.html">Centro de Ayuda</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+
+        <div class="help_actions">
+            <a class="login_btn" href="login.html">Iniciar sesión</a>
+            <a class="premium_btn" href="Plan.html">
+                <i class="fa-solid fa-crown"></i>
+                Premium
+            </a>
+        </div>
+    </nav>
+
+    <section class="contact_hero">
+        <span>Atención NutriVital</span>
+        <h1>¿En qué podemos ayudarte?</h1>
+        <p>Encuentra atención para pedidos, productos, entregas y beneficios Premium en un solo lugar.</p>
+    </section>
+
+    <section class="contact_quick_cards">
+        <a class="contact_quick_card" href="catalogo.html">
+            <div><i class="fa-solid fa-basket-shopping"></i></div>
+            <h3>Comprar productos</h3>
+            <p>Explora aceites de aguacate, formatos familiares y opciones de mayoreo.</p>
+        </a>
+
+        <a class="contact_quick_card" href="mailto:soporte@nutrivital.com">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <h3>Correo</h3>
+            <p>Escríbenos para cotizaciones, dudas de producto o soporte de compra.</p>
+        </a>
+
+        <a class="contact_quick_card" href="tel:+50255551234">
+            <div><i class="fa-solid fa-phone"></i></div>
+            <h3>Llamada</h3>
+            <p>Recibe ayuda sobre disponibilidad, pedidos y entregas dentro de Guatemala.</p>
+        </a>
+    </section>
+
+</header>
+
+<main class="contact_page_main">
+
+    <section class="contact_form_panel">
+        <div class="contact_form_intro">
+            <span>Atención personalizada</span>
+            <h2>Cuéntanos qué necesitas y te responderemos pronto.</h2>
+            <p>Completa el formulario con tu producto de interés, cantidad y zona de entrega. Nuestro equipo podrá ayudarte con una respuesta más clara.</p>
+
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Villa Nueva, Guatemala</li>
+                <li><i class="fa-solid fa-clock"></i> Lunes a sábado, 8:00 a 18:00</li>
+                <li><i class="fa-solid fa-truck-fast"></i> Pedidos y entregas según disponibilidad</li>
+            </ul>
+        </div>
+
+        <form class="contact_form" id="contactForm">
+            <label for="contactName">Nombre</label>
+            <input id="contactName" type="text" placeholder="Tu nombre completo" required>
+
+            <label for="contactEmail">Correo electrónico</label>
+            <input id="contactEmail" type="email" placeholder="correo@ejemplo.com" required>
+
+            <label for="contactProduct">Producto de interés</label>
+            <select id="contactProduct" required>
+                <option value="">Selecciona un producto</option>
+                <option>Aceite de aguacate 250ml</option>
+                <option>Aceite de aguacate 500ml</option>
+                <option>Aceite de aguacate 1L</option>
+                <option>Formato grande</option>
+                <option>Compra por mayoreo</option>
+                <option>Planes Premium</option>
+            </select>
+
+            <label for="contactMessage">Mensaje</label>
+            <textarea id="contactMessage" placeholder="Cuéntanos cantidad, presentación o zona de entrega" required></textarea>
+
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Enviar mensaje
+            </button>
+        </form>
+    </section>
+
+    <section class="contact_faq">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="contact_faq_grid">
+            <article class="contact_faq_card">
+                <h3>¿Puedo pedir varias presentaciones?</h3>
+                <p>Sí. Puedes combinar botellas de 250ml, 500ml, 1L y formatos de mayoreo según disponibilidad.</p>
+            </article>
+
+            <article class="contact_faq_card">
+                <h3>¿Tienen beneficios Premium?</h3>
+                <p>Sí. Los planes Premium incluyen promociones, descuentos y atención preferente.</p>
+            </article>
+
+            <article class="contact_faq_card">
+                <h3>¿Dónde veo los precios?</h3>
+                <p>Los precios están en el catálogo, separados por producto y presentación.</p>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<script src="nav.js"></script>
+<script src="contacto.js"></script>
+</body>
+</html>
