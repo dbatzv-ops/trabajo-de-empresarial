@@ -4,7 +4,7 @@ const productosNutriVital = [
         nombre: "Aceite de aguacate 250ml",
         descripcion: "Presentación práctica para probar NutriVital o usar en desayunos y ensaladas.",
         precio: "45.50",
-        imagen: "img/a1.png",
+        imagen: "img/nutrivital-250ml.png",
         categoria: "botellas",
         etiqueta: "Ideal para empezar",
         beneficios: ["100% natural", "Rico en antioxidantes", "Uso diario"]
@@ -14,7 +14,7 @@ const productosNutriVital = [
         nombre: "Aceite de aguacate 500ml",
         descripcion: "El favorito para cocinar saludable durante la semana con sabor suave y natural.",
         precio: "89.99",
-        imagen: "img/a2.png",
+        imagen: "img/nutrivital-500ml.png",
         categoria: "botellas",
         etiqueta: "Más vendido",
         beneficios: ["Producción artesanal", "Sin químicos", "Para toda la familia"]
@@ -24,7 +24,7 @@ const productosNutriVital = [
         nombre: "Aceite de aguacate 1L",
         descripcion: "Formato amplio para cocina frecuente, restaurantes pequeños o preparación profesional.",
         precio: "149.99",
-        imagen: "img/a3.png",
+        imagen: "img/nutrivital-1l.png",
         categoria: "botellas",
         etiqueta: "Alto rendimiento",
         beneficios: ["Sabor intenso", "Presentación premium", "Cocina profesional"]
@@ -32,19 +32,21 @@ const productosNutriVital = [
     {
         id: "aceite-galon",
         nombre: "Aceite de aguacate 3.20L",
-        descripcion: "Presentación grande para hogares que cocinan saludable todos los días.",
+        descripcion: "Próximamente.",
         precio: "249.95",
-        imagen: "img/a3.png",
+        imagen: "img/nutrivital-320l.png",
         categoria: "formato-grande",
         etiqueta: "Formato familiar",
-        beneficios: ["Disponible", "Alto rendimiento", "Ideal para cocina familiar"]
+        estado: "Próximamente",
+        accion: "Reservar",
+        beneficios: ["Próximamente", "Alto rendimiento", "Ideal para cocina familiar"]
     },
     {
         id: "aceite-spray",
         nombre: "Aceite de aguacate en spray 400g",
         descripcion: "Opción práctica para controlar porciones en sartén, ensaladas y recetas ligeras.",
         precio: "94.95",
-        imagen: "img/a1.png",
+        imagen: "img/nutrivital-spray-400g.png",
         categoria: "formato-grande",
         etiqueta: "Práctico",
         beneficios: ["Disponible", "Uso rápido", "Control de porciones"]
@@ -52,22 +54,26 @@ const productosNutriVital = [
     {
         id: "caja-8-unidades",
         nombre: "Aceite de aguacate caja 8 unidades",
-        descripcion: "Paquete para negocios, restaurantes pequeños o compras por volumen.",
+        descripcion: "Próximamente.",
         precio: "459.95",
-        imagen: "img/a2.png",
+        imagen: "img/nutrivital-caja-8.png",
         categoria: "mayoreo",
         etiqueta: "Mayoreo",
-        beneficios: ["Disponible", "8 unidades", "Compra por volumen"]
+        estado: "Próximamente",
+        accion: "Reservar",
+        beneficios: ["Próximamente", "8 unidades", "Compra por volumen"]
     },
     {
         id: "caja-500ml",
         nombre: "Caja de aceite de aguacate 500ml",
-        descripcion: "Caja de botellas NutriVital de 500ml para abastecer tu negocio o cocina familiar.",
+        descripcion: "Próximamente.",
         precio: "649.95",
-        imagen: "img/a2.png",
+        imagen: "img/nutrivital-caja-500ml.png",
         categoria: "mayoreo",
         etiqueta: "Caja 500ml",
-        beneficios: ["Disponible", "Botellas de 500ml", "Ideal para mayoreo"]
+        estado: "Próximamente",
+        accion: "Reservar",
+        beneficios: ["Próximamente", "Botellas de 500ml", "Ideal para mayoreo"]
     }
 ];
 
@@ -100,7 +106,9 @@ function cargarProductos(categoria = "todos") {
 
             <div class="producto_info">
                 <h3>${producto.nombre}</h3>
-                <strong class="producto_estado">Disponible</strong>
+                <strong class="producto_estado ${producto.estado === "Próximamente" ? "proximamente" : ""}">
+                    ${producto.estado || "Disponible"}
+                </strong>
                 <p>${producto.descripcion}</p>
 
                 <ul class="beneficios">
@@ -113,7 +121,7 @@ function cargarProductos(categoria = "todos") {
                         data-producto="${producto.nombre}"
                         data-precio="${producto.precio}"
                         data-imagen="${producto.imagen}">
-                        Comprar
+                        ${producto.accion || "Comprar"}
                     </button>
                 </div>
             </div>
